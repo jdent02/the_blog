@@ -5,17 +5,17 @@ date: 2019-05-03T02:44:17.072Z
 thumbnail: /images/uploads/runner-track-starting-foot.jpg
 rating: 5
 ---
-# "Oh Great!" 
+# "Oh Great!"
 
 you're thinking, "another blog from another guy who works with rendering engines.  **What could he possibly bring to the table?**"
 
 Good question... There are a lot of blogs out there from guys that work on some pretty hard core rendering engines:
 
-Matt Pharr: <https://pharr.org/matt/blog/>
+[Matt Pharr](https://pharr.org/matt/blog/)
 
-Mike Farnsworth: <http://renderspud.blogspot.com/>
+[Mike Farnsworth](http://renderspud.blogspot.com/)
 
-Yining Lee: <https://blog.yiningkarlli.com/>
+[Yining Lee](https://blog.yiningkarlli.com/)
 
 All of these guys are really, really good at what they do.
 
@@ -37,4 +37,4 @@ So isn't that a bit of a unique spin on the usual blog?  I'm learning not only h
 
 # So?
 
-So I want this blog to be written for the people like me: neophytes to this wonderful world of rendering.  Neophytes to the C++ language.  Neophytes to the challenges of working with Digital Content Creation programs (DCC) like [Blender](www.blender.org)
+So I want this blog to be written for the people like me: neophytes to this wonderful world of rendering.  Neophytes to the C++ language.  Neophytes to the challenges of working with Digital Content Creation programs (DCC) like [Blender](www.blender.org) and their powerful yet often frustrating API's (and the tricks around some of it).  If you've read this far, I hope you enjoy what you read.
