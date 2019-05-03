@@ -84,8 +84,9 @@ But I always had the appleseed guys to turn to.  It wasn't their job (and I'm su
 
 <br>
 
-**So do I recommend C++ for someone beginning to code?**<br>
-Umm, hell no.  C++ has a well earned reputation for being complex.  The core syntax itself isn't hard to understand or use, but so much of modern C++ is based around using the STL (Standard Template Library) and it is not anywhere near as simple.  Just an example:
+<h2>So do I recommend C++ for someone beginning to code?</h2>
+
+Umm, **hell no**.  C++ has a well earned reputation for being complex.  The core syntax itself isn't hard to understand or use, but so much of modern C++ is based around using the STL (Standard Template Library) and it is not anywhere near as simple.  Just an example:
 
 Raw pointers in C++ (a core feature) are easy to create, can be easily passed in and out of functions, constructors, destructors, etc...  Conceptually they aren't difficult to understand either.  But they are a perfect example of Uncle Ben's saying that "with great power comes great responsibility"(sic).  In order to make life 'easier', The STL has something called a smart pointer.  They allow the programmer to relax a bit, and they're less likely to destroy the universe.  However, moving one around in and out of functions isn't always simple.  You have to use .get(), std::move() and a few other commands to use them properly (to say nothing about trying to use them in a .dll library).  It's a tradeoff that isn't always worth it, IMHO.
 
