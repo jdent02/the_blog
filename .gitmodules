@@ -1,0 +1,3 @@
+[submodule "themes/hamburg"]
+	path = themes/hamburg
+	url = https://github.com/hauke96/hugo-theme-hamburg.git

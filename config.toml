@@ -1,0 +1,27 @@
+baseurl = "http://your-site.com"
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = "true"
+title = "So, You Think You Can Blog?"
+theme = "hamburg"
+
+[params]
+    # Short subtitle/tagline. This is displayed in the header.
+    themecolor = "#hexcolor" # Defines the tab color in Chrome for Android.
+    # To load additional CSS styles
+    customCSS = ['hamburg.css']
+    # Show this very user-friendly and absolutely not annoying GDPR notice at the bottom of the page
+    ShowGDPRNotice = true
+
+[languages]
+    [languages.en]
+        languageCode = "en"
+        languageName = "English"
+        subtitle = "Stuff"
+        # Copyright notice. This is displayer in the footer.
+        copyright = "&copy; 2019 Jonathan Dent"
+        [languages.en.menu]
+            [[languages.en.menu.main]]
+                name = "About"
+                identifier = "about"
+                url = "pages/about"
+    
