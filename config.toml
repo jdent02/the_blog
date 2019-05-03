@@ -41,3 +41,7 @@ theme = "hamburg"
                 identifier = "rift_next"
                 url = "pages/rift_next"
     
+[sitemap]
+  changefreq = "monthly"
+  filename = "sitemap.xml"
+  priority = 0.5
