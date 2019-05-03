@@ -1,4 +1,4 @@
-baseurl = "http://your-site.com"
+baseurl = "https://weekendcoder.netlify.com/"
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = "true"
 title = "So, You Think You Can Blog?"
