@@ -1,7 +1,7 @@
 baseurl = "https://weekendcoder.netlify.com/"
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = "true"
-title = "So, You Think You Can Blog?"
+title = "So, You Think You Can Blog About Rendering?"
 theme = "hamburg"
 
 [params]
@@ -16,7 +16,7 @@ theme = "hamburg"
     [languages.en]
         languageCode = "en"
         languageName = "English"
-        subtitle = "Stuff"
+        subtitle = "A home for musings, thoughts, rants, recipes, general weirdness, and whatever else pops up"
         # Copyright notice. This is displayer in the footer.
         copyright = "&copy; 2019 Jonathan Dent"
         [languages.en.menu]
@@ -24,4 +24,20 @@ theme = "hamburg"
                 name = "About"
                 identifier = "about"
                 url = "pages/about"
+            [[languages.en.menu.main]]
+                name = "appleseed"
+                identifier = "appleseed"
+                url = "pages/appleseed"
+            [[languages.en.menu.main]]
+                name = "PRMan for Blender"
+                identifier = "prmanforblender"
+                url = "pages/prmanforblender"
+            [[languages.en.menu.main]]
+                name = "RIFT Renderer"
+                identifier = "rift_renderer"
+                url = "pages/rift_renderer"
+            [[languages.en.menu.main]]
+                name = "RIFT Next"
+                identifier = "rift_next"
+                url = "pages/rift_next"
     

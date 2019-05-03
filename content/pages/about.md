@@ -1,7 +1,6 @@
 ---
 title: "About"
-date: 2018-09-10T19:04:46+02:00
 tags: ["page", "about"]
 ---
 
-This theme can do pages as well. WOW.
+The blog and project site of one Jon Dent: weekend coder who probably should've stayed in his CSci major twenty odd yers ago...
