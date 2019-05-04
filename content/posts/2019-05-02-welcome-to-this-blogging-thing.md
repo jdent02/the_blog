@@ -8,6 +8,7 @@ date: 2019-05-02
 draft: false
 categories:
 - general
+- random
 cover: images/runner-track-starting-foot.jpg
 ---
 # "Oh Great!"
