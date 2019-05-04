@@ -1,14 +1,11 @@
 ---
-title: "Welcome to the Blog"
-description: ""
-author:
-  name: "Jon Dent"
-  desc: " "
-date: 2019-05-02
+title: Welcome to the Blog
 draft: false
-categories:
-- general
+description: None
 cover: images/runner-track-starting-foot.jpg
+categories:
+  - general
+  - no specifics
 ---
 # "Oh Great!"
 
