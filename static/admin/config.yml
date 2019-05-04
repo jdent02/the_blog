@@ -18,5 +18,6 @@ collections:
       - {label: "Draft", name: "draft", widget: "boolean"}
       - {label: "Description", name: "description", widget: "string"}
       - {label: "Cover", name: "cover", widget: "image"}
+      - {label: "Categories", name: "categories", widget: "list", default: ["general"]}
       - {label: "Body", name: "body", widget: "markdown"}
-      - {label: "Categories", name: "categories", widget: "list", field: {label: Category, name: "", widget: string}}
+      
