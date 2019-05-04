@@ -1,4 +1,49 @@
 baseURL = "https://weekendcoder.netlify.com/"
 languageCode = "en-us"
-title = "My New Hugo Site"
-theme = "hyde-hyde"
+title = "So You Think You Can Blog About Rendering?"
+theme = "dream-plus"
+paginate = 4
+enableRobotsTXT = true
+
+enableEmoji=true
+
+[params]
+    contentType = "post"
+
+    siteStartYear = 2019
+
+    [params.author]
+        name = "Jonathan Dent"
+        description = "A blog for musings, rants, randomness, recipes, and whatever else."
+        motto = "and his blog for musings, rants, randomness, recipes, and whatever else."
+        avatar = "images/28058543_10156225013813054_8340590582916311623_n.jpg"
+
+    [params.background]
+        colorBG = false
+        #Random backgrounds
+        bgList = ["images/jr-korpa-1238283-unsplash.jpg"]
+        #Blur the background
+        bgBlur = "0.2"
+
+    [params.features]
+        coverArgs = "400x300 q50"
+		#Enable Twitter Emoji
+		twitterEmoji = false
+		#Enable Table of Contents
+		toc = true
+		#Enable share card
+		shareCard = true
+		#Use custom CSS
+		# customCSS = ["https://cdn.rawgit.com/UtkarshVerma/hugo-dream-plus/ae11561d/exampleSite/static/css/highlight.css"]
+
+    [params.tags]
+		enabled = true
+
+    [params.categories]
+		enabled = true
+
+    [social]
+	email = "jdent02@hotmail.com"
+	github = "jdent02"
+	twitter = "Jdent022"
+    linkedin = "jonathan-dent-1886409"
