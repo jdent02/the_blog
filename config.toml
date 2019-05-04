@@ -8,6 +8,9 @@ enableRobotsTXT = true
 enableEmoji=true
 
 [params]
+    #Favicon for site
+	favicon = "/img/defaultFav.ico"
+    
     contentType = "post"
 
     siteStartYear = 2019
