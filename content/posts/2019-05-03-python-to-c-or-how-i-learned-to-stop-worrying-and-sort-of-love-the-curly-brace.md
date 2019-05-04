@@ -1,8 +1,6 @@
 ---
-layout: blog
 title: "Python to C++: Or How I Learned to Stop Worrying and *Sort of* Love the Curly Brace"
-date: 2019-05-03T17:40:30.148Z
-
+date: 2019-05-03
 description: ""
 author:
   name: "Jon Dent"
