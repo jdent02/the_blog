@@ -1,0 +1,40 @@
+---
+label: Blog Post
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: datetime
+  name: date
+  label: date
+- type: list
+  name: categories
+  label: categories
+- type: file
+  name: coverImage
+  label: coverImage
+- type: text
+  name: coverSize
+  label: coverSize
+- type: text
+  name: thumbnailImagePosition
+  label: thumbnailImagePosition
+- type: boolean
+  name: comments
+  label: comments
+- type: boolean
+  name: showTags
+  label: showTags
+- type: boolean
+  name: showPagination
+  label: showPagination
+- type: boolean
+  name: showSocial
+  label: showSocial
+- type: boolean
+  name: showDate
+  label: showDate
+- type: text
+  name: summary
+  label: summary
