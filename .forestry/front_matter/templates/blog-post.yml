@@ -5,9 +5,12 @@ fields:
 - type: text
   name: title
   label: Title
-- name: draft
-  type: boolean
-  label: Draft
+- type: datetime
+  name: date
+  label: Date
+- type: text
+  name: summary
+  label: Summary
 - name: gallery
   type: image_gallery
   config: {}
@@ -16,9 +19,6 @@ fields:
   type: tag_list
   default: []
   label: Keywords
-- type: datetime
-  name: date
-  label: Date
 - name: categories
   type: tag_list
   default: []
@@ -69,23 +69,23 @@ fields:
       file: 
       path: 
   label: Cover Size
-- type: text
-  name: summary
-  label: Summary
 - type: boolean
   name: comments
   label: comments
 - type: boolean
   name: showTags
-  label: showTags
+  label: Show Tags
 - type: boolean
   name: showPagination
   label: showPagination
 - type: boolean
   name: showSocial
-  label: showSocial
+  label: Show Social
 - type: boolean
   name: showDate
-  label: showDate
+  label: Show Date
+- name: showactions
+  type: boolean
+  label: Show Actions
 pages:
 - content/post/2019-05-02-welcome-to-this-blogging-thing.md
