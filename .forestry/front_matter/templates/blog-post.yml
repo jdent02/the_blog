@@ -5,6 +5,13 @@ fields:
 - type: text
   name: title
   label: Title
+- name: draft
+  type: boolean
+  label: Draft
+- name: gallery
+  type: image_gallery
+  config: {}
+  label: Gallery
 - name: keywords
   type: tag_list
   default: []
@@ -80,8 +87,5 @@ fields:
 - type: boolean
   name: showDate
   label: showDate
-- name: draft
-  type: boolean
-  label: Draft
 pages:
 - content/post/2019-05-02-welcome-to-this-blogging-thing.md
