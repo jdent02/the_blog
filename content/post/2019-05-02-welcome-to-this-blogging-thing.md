@@ -1,10 +1,9 @@
 ---
-title: "So You Think You Can Blog About Rendering?"
+title: So You Think You Can Blog About Rendering?
 date: 2019-05-02
-draft: false
 categories:
-  - General
-coverImage: /images/runner-track-starting-foot.jpg
+- General
+coverImage: "/images/runner-track-starting-foot.jpg"
 coverSize: partial
 thumbnailImagePosition: right
 comments: false
@@ -12,7 +11,9 @@ showTags: true
 showPagination: true
 showSocial: true
 showDate: true
-summary: "Welcome to the Blog!"
+summary: Welcome to the Blog!
+tags: []
+
 ---
 # "Oh Great!"
 

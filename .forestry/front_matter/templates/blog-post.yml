@@ -43,3 +43,5 @@ fields:
 - type: text
   name: summary
   label: summary
+pages:
+- content/post/2019-05-02-welcome-to-this-blogging-thing.md
