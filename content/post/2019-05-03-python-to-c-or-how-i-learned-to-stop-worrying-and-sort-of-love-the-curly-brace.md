@@ -1,17 +1,26 @@
 ---
-title: "Python to C++: Or How I Learned to Stop Worrying and *Sort of* Love the Curly Brace"
+title: "Python to C++: Or How I Stopped Worrying and Learned to *Sort of* Love the Curly Brace"
 date: 2019-05-03
-description: ""
-author:
-  name: "Jon Dent"
-  desc: " "
-draft: false
-categories:
-- musings on coding
+keywords:
+- coding
+- c++
+- python
 tags:
-- C++ 
-- Python
-cover: images/fear_change_cut.jpg
+- c++
+- python
+categories:
+  - Coding Thoughts
+clearReading: false
+thumbnailImage: images/fear_change_cut.jpg
+thumbnailImagePosition: left
+autoThumbnailImage: yes
+metaAlignment: center
+comments: false
+showTags: true
+showPagination: true
+showSocial: true
+showDate: true
+summary: "Am I insane?  Or is there something in the water?"
 ---
 Garth said it best:
 
@@ -27,7 +36,7 @@ For guys at my level, C++ is a behemoth.  So many terms thrown around: pointers,
 
 I could barely comprehend what I was seeing, let alone even try to understand the flow:
 
-```cpp
+{{< codeblock "archives.cpp" "cpp" "http://underscorejs.org/#compact" "archives.cpp" >}}
 void Intersector::fixed_offset(
     const Vector3d&                 p,
     Vector3d                        n,
@@ -62,7 +71,7 @@ void Intersector::fixed_offset(
     for (size_t i = 0; i < 3; ++i)
     {
         if (is_small[i])
-```
+{{< /codeblock >}}
 
 WTF does any of that mean?  What the hell is '&'?  Why is 'void' at the beginning? What is 'const' or 'static'?  So many unknowns...  why can't I just do
 
@@ -82,14 +91,14 @@ So I went looking for a way to learn C++ without going to college, again.
 
 Udemy is like a large shopping mall.  Think Mall of America, only without a food court or Camp Snoopy (don't care what it's called these days, it will always be Camp Snoopy to me).  You can find courses on pretty much anything in there.  Unfortunately, if Udemy is a mall, then that mall is in the middle of the Wild West and the sheriff is out to lunch, or at least busy visiting the toilet to fire out that breakfast burrito.  You have to be careful you don't spend your money on a course that ultimately teaches you nothing (i.e. Underwater Basket Weaving for Absolute Beginners).  Luckily I made a few good choices, and 40+ hours of video later, I felt confident enough to look at appleseed's source code again:
 
-```cpp
+{{< codeblock "archives.cpp" "cpp" "http://underscorejs.org/#compact" "archives.cpp" >}}
 void Intersector::fixed_offset(
     const Vector3d&                 p,
     Vector3d                        n,
     Vector3d&                       front,
     Vector3d&                       back)
 {
-```
+{{< /codeblock >}}
 
 Okay, that's telling me this function doesn't return anything, it takes in four Vector3d variables, one of them is being  copied, and the other three (with the dreaded '&') are references (i.e not copies).
 

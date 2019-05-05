@@ -1,14 +1,18 @@
 ---
-title: "Welcome to the Blog"
-description: ""
-author:
-  name: "Jon Dent"
-  desc: " "
+title: "So You Think You Can Blog About Rendering?"
 date: 2019-05-02
 draft: false
 categories:
-  - general
-cover: images/runner-track-starting-foot.jpg
+  - General
+coverImage: /images/runner-track-starting-foot.jpg
+coverSize: partial
+thumbnailImagePosition: right
+comments: false
+showTags: true
+showPagination: true
+showSocial: true
+showDate: true
+summary: "Welcome to the Blog!"
 ---
 # "Oh Great!"
 
@@ -26,7 +30,7 @@ All of these guys are really, really good at what they do.
 
 Compared to them, I am but a little grasshopper.  Like really little...
 
-![Really, really little](/images/621734c5d09782244238867c08a97016.png "Really, really little")
+![Really, really little](/images/grasshopper.png "Really, really little")
 
 I'm only a few years into this coding thing, working almost entirely in my free time (to the occasional annoyance of my ever loving wife).  I'm less than a year into learning C++.
 
