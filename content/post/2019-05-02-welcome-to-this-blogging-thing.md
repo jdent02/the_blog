@@ -13,8 +13,7 @@ showSocial: true
 showDate: true
 summary: Welcome to the Blog!
 tags: []
-gallery:
-- "/images/abstract-1278077_1920.jpg"
+gallery: []
 keywords: []
 thumbnailimage: ''
 thumbnailimageposition: ''
