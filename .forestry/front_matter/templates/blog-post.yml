@@ -71,13 +71,13 @@ fields:
   label: Cover Size
 - type: boolean
   name: comments
-  label: comments
+  label: Show Comments
 - type: boolean
   name: showTags
   label: Show Tags
 - type: boolean
   name: showPagination
-  label: showPagination
+  label: Show Pagination
 - type: boolean
   name: showSocial
   label: Show Social
