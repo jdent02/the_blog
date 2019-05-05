@@ -5,6 +5,10 @@ fields:
 - type: text
   name: title
   label: Title
+- name: keywords
+  type: tag_list
+  default: []
+  label: Keywords
 - type: datetime
   name: date
   label: Date
@@ -16,15 +20,51 @@ fields:
   type: tag_list
   default: []
   label: Tags
+- name: thumbnailimage
+  type: file
+  config:
+    maxSize: 250
+  label: Thumbnail Image
+- name: thumbnailimageposition
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - left
+    - " right"
+    - " bottom"
+    source:
+      type: simple
+      section: posts
+      file: 
+      path: 
+  label: Thumbnail Position
 - type: file
   name: coverImage
-  label: coverImage
+  label: Cover Image
+- name: covercaption
+  type: text
+  config:
+    required: false
+  label: Cover Caption
+- name: coversize
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - partial
+    - full
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Cover Size
 - type: text
-  name: coverSize
-  label: coverSize
-- type: text
-  name: thumbnailImagePosition
-  label: thumbnailImagePosition
+  name: summary
+  label: Summary
 - type: boolean
   name: comments
   label: comments
@@ -40,8 +80,8 @@ fields:
 - type: boolean
   name: showDate
   label: showDate
-- type: text
-  name: summary
-  label: summary
+- name: draft
+  type: boolean
+  label: Draft
 pages:
 - content/post/2019-05-02-welcome-to-this-blogging-thing.md
