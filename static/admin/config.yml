@@ -18,7 +18,7 @@ collections:
       - {label: "Keywords", name: "keywords", widget: "list", required: false}
       - {label: "Categories", name: "categories", widget: "list", required: false}
       - {label: "Tags", name: "tags", widget: "list", required: false}
-      - {label: "Gallery", name: "gallery", widget: list, field: {label: "Image", name: "image", widget: "image"}, required: false}
+      - {label: "Gallery", name: "gallery", widget: list, required: false}
       - {label: "Thumbnail Image", name: "thumbnailImage", widget: "image", required: false}
       - {label: "Thumbnail Image Position", name: "thumbnailImagePosition", widget: "select", options: ["left", "bottom", "right"], required: false}
       - {label: "Cover Image", name: "coverImage", widget: "image", required: false}

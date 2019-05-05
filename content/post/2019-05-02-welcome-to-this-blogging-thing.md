@@ -19,7 +19,7 @@ thumbnailimage: ''
 thumbnailimageposition: ''
 covercaption: ''
 coversize: ''
-showactions: false
+showactions: true
 
 ---
 # "Oh Great!"
