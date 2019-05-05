@@ -1,0 +1,52 @@
+---
+label: dfsdfsdf
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: datetime
+  name: date
+  label: date
+- type: list
+  name: keywords
+  label: keywords
+- type: list
+  name: tags
+  label: tags
+- type: list
+  name: categories
+  label: categories
+- type: boolean
+  name: clearReading
+  label: clearReading
+- type: file
+  name: thumbnailImage
+  label: thumbnailImage
+- type: text
+  name: thumbnailImagePosition
+  label: thumbnailImagePosition
+- type: boolean
+  name: autoThumbnailImage
+  label: autoThumbnailImage
+- type: text
+  name: metaAlignment
+  label: metaAlignment
+- type: boolean
+  name: comments
+  label: comments
+- type: boolean
+  name: showTags
+  label: showTags
+- type: boolean
+  name: showPagination
+  label: showPagination
+- type: boolean
+  name: showSocial
+  label: showSocial
+- type: boolean
+  name: showDate
+  label: showDate
+- type: text
+  name: summary
+  label: summary
