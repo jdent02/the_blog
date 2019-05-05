@@ -8,13 +8,14 @@ fields:
 - type: datetime
   name: date
   label: Date
+- name: categories
+  type: tag_list
+  default: []
+  label: Categories
 - name: tags
   type: tag_list
   default: []
   label: Tags
-- type: list
-  name: categories
-  label: categories
 - type: file
   name: coverImage
   label: coverImage
