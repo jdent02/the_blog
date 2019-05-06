@@ -1,5 +1,6 @@
 ---
-title: "Python to C++: Or How I Stopped Worrying and Learned to *Sort of* Love the Curly Brace"
+title: 'Python to C++: Or How I Stopped Worrying and Learned to *Sort of* Love the
+  Curly Brace'
 date: 2019-05-03
 keywords:
 - coding
@@ -9,18 +10,19 @@ tags:
 - c++
 - python
 categories:
-  - Coding Thoughts
+- Coding Thoughts
 clearReading: false
 thumbnailImage: images/fear_change_cut.jpg
 thumbnailImagePosition: left
-autoThumbnailImage: yes
+autoThumbnailImage: true
 metaAlignment: center
 comments: false
 showTags: true
 showPagination: true
 showSocial: true
 showDate: true
-summary: "Am I insane?  Or is there something in the water?"
+summary: Am I insane?  Or is there something in the water?
+
 ---
 Garth said it best:
 
@@ -36,25 +38,23 @@ For guys at my level, C++ is a behemoth.  So many terms thrown around: pointers,
 
 I could barely comprehend what I was seeing, let alone even try to understand the flow:
 
-{{< codeblock "archives.cpp" "cpp" "http://underscorejs.org/#compact" "archives.cpp" >}}
-void Intersector::fixed_offset(
-    const Vector3d&                 p,
-    Vector3d                        n,
-    Vector3d&                       front,
-    Vector3d&                       back)
+{{< codeblock "" "cpp" "" "" >}} void Intersector::fixed_offset(_const Vector3d&                 p,
+Vector3d                        n,
+Vector3d&                       front,
+Vector3d&                       back)
 {
-    //
-    // Reference:
-    //
-    //   Quasi-Monte Carlo light transport simulation by efficient ray tracing
-    //   http://vts.uni-ulm.de/docs/2008/6265/vts_6265_8393.pdf
-    //
+//
+// Reference:
+//
+//   Quasi-Monte Carlo light transport simulation by efficient ray tracing
+//   http://vts.uni-ulm.de/docs/2008/6265/vts_6265_8393.pd_f
+//
 
     // Offset parameters.
     const double Threshold = 1.0e-25;
     const int EpsMag = 8;
     static const int EpsLut[2] = { EpsMag, -EpsMag };
-
+    
     // Check which components of p are close to the origin.
     const bool is_small[3] =
     {
@@ -62,28 +62,27 @@ void Intersector::fixed_offset(
         abs(p[1]) < Threshold,
         abs(p[2]) < Threshold
     };
-
+    
     // If any of the components of p is close to the origin, we need to normalize n.
     if (is_small[0] | is_small[1] | is_small[2])
         n = normalize(n);
-
+    
     // Compute the offset points.
     for (size_t i = 0; i < 3; ++i)
     {
         if (is_small[i])
+
 {{< /codeblock >}}
 
 WTF does any of that mean?  What the hell is '&'?  Why is 'void' at the beginning? What is 'const' or 'static'?  So many unknowns...  why can't I just do
 
-```
-x = y
-```
+    x = y
 
 Like I can in Python?  To top the confusion off, the term "Quasi-Monte Carlo" was familiar, but had no idea what it really was (more on that in a separate post).
 
 So for a while I mostly harped on Franz and Esteban (mostly the latter) to get them to add the features I needed.  Eventually the reality set in that these were busy guys, and my requests simply weren't a priority.  Eventually, I took it upon myself to add the stuff I needed.  At first, all I needed to do was copy existing code verbatim and replace a few names, so it goes without saying that those worked just fine without any real problems (and this is why you have volumetrics and post processing stacks in blenderseed).
 
-Then I came to the same epiphany that I had back when I was involved with PRMan for Blender, the same epiphany that led me to learn Python: if you want to get something done, you'd better try to learn how it works so you can do it yourself.  
+Then I came to the same epiphany that I had back when I was involved with PRMan for Blender, the same epiphany that led me to learn Python: if you want to get something done, you'd better try to learn how it works so you can do it yourself.
 
 So I went looking for a way to learn C++ without going to college, again.
 
@@ -91,14 +90,7 @@ So I went looking for a way to learn C++ without going to college, again.
 
 Udemy is like a large shopping mall.  Think Mall of America, only without a food court or Camp Snoopy (don't care what it's called these days, it will always be Camp Snoopy to me).  You can find courses on pretty much anything in there.  Unfortunately, if Udemy is a mall, then that mall is in the middle of the Wild West and the sheriff is out to lunch, or at least busy visiting the toilet to fire out that breakfast burrito.  You have to be careful you don't spend your money on a course that ultimately teaches you nothing (i.e. Underwater Basket Weaving for Absolute Beginners).  Luckily I made a few good choices, and 40+ hours of video later, I felt confident enough to look at appleseed's source code again:
 
-{{< codeblock "archives.cpp" "cpp" "http://underscorejs.org/#compact" "archives.cpp" >}}
-void Intersector::fixed_offset(
-    const Vector3d&                 p,
-    Vector3d                        n,
-    Vector3d&                       front,
-    Vector3d&                       back)
-{
-{{< /codeblock >}}
+{{< codeblock "" "cpp" "" "" >}} void Intersector::fixed_offset( const Vector3d&                 p, Vector3d                        n, Vector3d&                       front, Vector3d&                       back) { {{< /codeblock >}}
 
 Okay, that's telling me this function doesn't return anything, it takes in four Vector3d variables, one of them is being  copied, and the other three (with the dreaded '&') are references (i.e not copies).
 
