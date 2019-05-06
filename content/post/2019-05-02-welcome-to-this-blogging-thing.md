@@ -54,4 +54,4 @@ So isn't that a bit of a unique spin on the usual blog?  I'm learning not only h
 
 # So?
 
-So I want this blog to be written for the people like me: neophytes to this wonderful world of rendering.  Neophytes to the C++ language.  Neophytes to the challenges of working with Digital Content Creation programs (DCC) like [Blender](www.blender.org) and their powerful yet often frustrating API's (and the tricks around some of it).  If you've read this far, I hope you enjoy what you read.
+So I want this blog to be written for the people like me: neophytes to this wonderful world of rendering.  Neophytes to the C++ language.  Neophytes to the challenges of working with <acronym title="Digital Content Creation">DCC</acronym> like [Blender](www.blender.org) and their powerful yet often frustrating API's (and the tricks around some of it).  If you've read this far, I hope you enjoy what you read.

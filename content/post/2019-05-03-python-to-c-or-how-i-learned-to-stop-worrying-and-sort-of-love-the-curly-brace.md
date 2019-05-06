@@ -26,7 +26,7 @@ summary: Am I insane?  Or is there something in the water?
 ---
 Garth said it best:
 
-![](/images/fear_change.jpg)
+{{< image classes="fancybox left clear" src="/images/fear_change.jpg" >}}
 
 I was fairly comfortable with Python, the only language I'd used so far.  It's pretty straightforward, and I knew it well enough to get the things out of Blender that I needed.  Then came a time when I noticed that there were some things missing in appleseed's Python bindings that I needed.  Problem was that appleseed is written in...
 
@@ -38,10 +38,11 @@ For guys at my level, C++ is a behemoth.  So many terms thrown around: pointers,
 
 I could barely comprehend what I was seeing, let alone even try to understand the flow:
 
-{{< codeblock "" "cpp" "" "" >}} void Intersector::fixed_offset(_const Vector3d&                 p,
-Vector3d                        n,
-Vector3d&                       front,
-Vector3d&                       back)
+{{< codeblock "" "cpp" "" "" >}} void Intersector::fixed_offset(
+    const Vector3d&                 p,
+    Vector3d                        n,
+    Vector3d&                       front,
+    Vector3d&                       back)
 {
 //
 // Reference:
@@ -90,7 +91,12 @@ So I went looking for a way to learn C++ without going to college, again.
 
 Udemy is like a large shopping mall.  Think Mall of America, only without a food court or Camp Snoopy (don't care what it's called these days, it will always be Camp Snoopy to me).  You can find courses on pretty much anything in there.  Unfortunately, if Udemy is a mall, then that mall is in the middle of the Wild West and the sheriff is out to lunch, or at least busy visiting the toilet to fire out that breakfast burrito.  You have to be careful you don't spend your money on a course that ultimately teaches you nothing (i.e. Underwater Basket Weaving for Absolute Beginners).  Luckily I made a few good choices, and 40+ hours of video later, I felt confident enough to look at appleseed's source code again:
 
-{{< codeblock "" "cpp" "" "" >}} void Intersector::fixed_offset( const Vector3d&                 p, Vector3d                        n, Vector3d&                       front, Vector3d&                       back) { {{< /codeblock >}}
+{{< codeblock "" "cpp" "" "" >}} void Intersector::fixed_offset(
+    const Vector3d&                 p, 
+    Vector3d                        n, 
+    Vector3d&                       front, 
+    Vector3d&                       back) 
+{{< /codeblock >}}
 
 Okay, that's telling me this function doesn't return anything, it takes in four Vector3d variables, one of them is being  copied, and the other three (with the dreaded '&') are references (i.e not copies).
 

@@ -10,7 +10,7 @@ bio = ""
 job = ""
 location = "USA"
 name = "Jonathan Dent"
-picture = "/images/me_thumb.jpg"
+picture = "/images/Enlight4.jpg"
 twitter = "Jdent022"
 [[menu.links]]
 identifier = "linkedin"
@@ -29,31 +29,37 @@ identifier = "about"
 name = "About"
 pre = "<i class=\"sidebar-button-icon fa fa-lg fa-question\"></i>"
 url = "/#about"
-weight = 5
+weight = 6
 [[menu.main]]
 identifier = "archives"
 name = "Archives"
 pre = "<i class=\"sidebar-button-icon fa fa-lg fa-archive\"></i>"
 url = "/archives"
-weight = 4
+weight = 5
 [[menu.main]]
 identifier = "tags"
 name = "Tags"
 pre = "<i class=\"sidebar-button-icon fa fa-lg fa-tags\"></i>"
 url = "/tags"
-weight = 3
+weight = 4
 [[menu.main]]
 identifier = "categories"
 name = "Categories"
 pre = "<i class=\"sidebar-button-icon fa fa-lg fa-bookmark\"></i>"
 url = "/categories"
-weight = 2
+weight = 3
 [[menu.main]]
 identifier = "home"
 name = "Home"
 pre = "<i class=\"sidebar-button-icon fa fa-lg fa-home\"></i>"
 url = "/"
 weight = 1
+[[menu.main]]
+identifier = "projects"
+name = "Projects"
+pre = "<i class=\"sidebar-button-icon fa fa-lg fa-page\"></i>"
+url = "page/blender_plugins"
+weight = 2
 [[menu.misc]]
 identifier = "rss"
 name = "RSS"
