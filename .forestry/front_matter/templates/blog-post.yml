@@ -11,10 +11,6 @@ fields:
 - type: text
   name: summary
   label: Summary
-- name: gallery
-  type: image_gallery
-  config: {}
-  label: Gallery
 - name: keywords
   type: tag_list
   default: []
@@ -27,6 +23,13 @@ fields:
   type: tag_list
   default: []
   label: Tags
+- name: gallery
+  type: list
+  config:
+    use_select: false
+    min: 
+    max: 
+  label: Gallery
 - name: thumbnailimage
   type: file
   config:
