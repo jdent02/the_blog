@@ -5,12 +5,11 @@ summary: A Reduction in Free Time
 keywords:
   - RIFT
 categories:
-  - rift
-  - coding
+  - Rift
 tags:
   - rift_renderer
 thumbnailImage: /images/sphere-s.jpg
-thumbnailImagePosition: left
+thumbnailImagePosition: right
 showDate: true
 showTags: true
 showPagination: true
