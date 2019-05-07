@@ -9,7 +9,7 @@ categories:
   - coding
 tags:
   - rift_renderer
-thumbnailImage: /images/uploads/sphere-s.jpg
+thumbnailImage: /images/sphere-s.jpg
 thumbnailImagePosition: left
 showDate: true
 showTags: true
@@ -31,7 +31,7 @@ With that being said, here's how it started.
 
 RIFT started as a straightforward implementation of the simple path tracer described by Peter Shirley in his now famous trio of eBooks: [Raytracing in One Weekend](https://github.com/petershirley/raytracinginoneweekend), [Raytracing: The Next Week](https://github.com/petershirley/raytracingthenextweek), and [Raytracing: The Rest of Your Life](https://github.com/petershirley/raytracingtherestofyourlife).  At first I dutifully transcribed the code from his examples verbatim, and in a short amount of time had a working image:
 
-![](/images/uploads/sphere-s.jpg "Oooh, balls")
+![](/images/sphere-s.jpg "Oooh, balls")
 
 Pretty cool.  There's a raft of different techniques and features in that one simple shot: multiple material types, random location and color generation, transformation motion blur, a rudimentary BVH, and an emissive background.
 
@@ -61,7 +61,7 @@ All these changes were under the hood though. I didn't add any new features to t
 
 I continued to plug away at the books, and by the time I was done I had this:
 
-![](/images/uploads/cornell_box.jpg "Ooh, a box")
+![](/images/cornell_box.jpg "Ooh, a box")
 
 At this stage, the renderer had material importance sampling, a decent material system (including texture support), and even homogenous volumes.  Not a bad start, but still quite far from something truly useful, and this was the point where RIFT was born.  Originally, my plan was to update certain sections and start adding new functionality to the renderer.  
 
