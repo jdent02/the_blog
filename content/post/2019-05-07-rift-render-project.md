@@ -10,6 +10,8 @@ tags:
   - rift_renderer
 thumbnailImage: /images/sphere-s.jpg
 thumbnailImagePosition: right
+coverImage: /images/cornell_box.jpg
+coversize: partial
 showDate: true
 showTags: true
 showPagination: true
