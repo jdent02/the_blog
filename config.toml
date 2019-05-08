@@ -5,6 +5,7 @@ languageCode = "en-us"
 paginate = 7
 theme = "hugo-tranquilpeak-theme"
 title = "The Weekend Coder"
+googleAnalytics = UA-139842143-1
 [author]
 bio = ""
 job = ""
