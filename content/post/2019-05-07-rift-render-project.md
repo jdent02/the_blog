@@ -8,7 +8,7 @@ categories:
   - Rift
 tags:
   - rift_renderer
-thumbnailImage: /images/logo.png
+thumbnailImage: /images/twitter_profile_image.png
 thumbnailImagePosition: right
 coverImage: /images/cornell_box.jpg
 coversize: partial
