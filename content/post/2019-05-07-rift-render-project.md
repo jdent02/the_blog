@@ -10,7 +10,7 @@ tags:
   - rift_renderer
 thumbnailImage: /images/facebook_cover_photo_1.png
 thumbnailImagePosition: bottom
-coverImage: /images/cornell_box.jpg
+coverImage: /images/facebook_cover_photo_1.png
 coversize: partial
 showDate: true
 showTags: true
