@@ -8,8 +8,8 @@ categories:
   - Rift
 tags:
   - rift_renderer
-thumbnailImage: /images/logo.png
-thumbnailImagePosition: right
+thumbnailImage: /images/facebook_cover_photo_1.png
+thumbnailImagePosition: bottom
 coverImage: /images/cornell_box.jpg
 coversize: partial
 showDate: true
