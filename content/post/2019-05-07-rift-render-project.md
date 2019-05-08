@@ -8,7 +8,7 @@ categories:
   - Rift
 tags:
   - rift_renderer
-thumbnailImage: /images/sphere-s.jpg
+thumbnailImage: /images/logo.png
 thumbnailImagePosition: right
 coverImage: /images/cornell_box.jpg
 coversize: partial
