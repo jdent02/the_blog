@@ -10,5 +10,7 @@ categories:
   - blenderseed
 tags:
   - pearl_of_wisdom
+thumbnailImage: /images/istock_confusion_d0ah3h.jpg
+thumbnailImagePosition: left
 ---
 Placeholder...
