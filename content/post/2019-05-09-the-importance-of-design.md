@@ -1,7 +1,7 @@
 ---
 title: The Importance of Design
 date: 2019-05-09T13:45:03.662Z
-summary: i.e. Why coding without a plan is a dumb idea
+summary: i.e. Why it's a dumb idea for me to code without a plan
 keywords:
   - RIFT Renderer
 categories:
