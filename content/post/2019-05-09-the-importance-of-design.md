@@ -33,10 +33,40 @@ So anyhoo.
    4. Let your shogun approach cause plenty of bugs.
    5. Get confused because you can't remember how you got to where you are, you just know something isn't working.
    6. Fix bugs?
-   7.  .....
+   7. .....
    8. Profit!
    9. Fix more bugs in a random, undisciplined fashion.
    10. Re-write the whole damn thing because you've jacked it up so bad (and didn't document any of it).
    11. S*#$@, now nothing works.
    12. Cry salty tears of bitter defeat.
    13. Go to bed.
+
+Then I started on RIFT Next, and I had my 'Come to Jesus' moment on just how crappy that workflow is.  
+
+For all of it's complexity, blenderseed is essentially a shuttle; it takes objects from one system and translates them to another.  It doesn't have to design the render controller or tile callback or the data structures needed for it, as appleseed already has all of that.  
+
+Well, when creating a render engine from scrap you \*do\* have to think about those elements.  Especially when one of your goals is to not create a carbon copy of another renderer.  I'm always honest in stating that I take a lot of inspiration from PBRT and appleseed, but I'm still trying to do my own take on it.  That means I have to design, among other things:
+
+1. How the command line should be parsed and what information should be in it
+2. How the scene information is generated and stored
+3. How the render process is structured:
+   1. How is it controlled?
+   2. How are tiles created and managed?
+   3. How are threads of execution scheduled?
+   4. How do those threads run their sampling process?
+   5. How do those threads store their results and how do they return those results?
+   6. How are the thread results stored?
+   7. How does the renderer clean up (what even needs to be cleaned up?)
+   8. What needs to be done with the render results to make a viewable image?
+
+There's no way that kind of complexity can be hacked together as I merrily go along.  I really \*really\* need to plan all this out.
+
+Of course that's easier said than done.  One of the challenges I continually encounter is that even when I plan, I miss something important.  This is largely due to my inexperience with analyzing code design to that nitpicky of a level.  
+
+Take this example: I want RIFT to be a tiled renderer.  Originally I had planned for each worker thread to merge it's results into a master 'pixel_buffer' float array when it was finished running.  While that plan would have worked, it would have been sub optimal, for the following reasons:
+
+When a tile finished it's process, it would have to lock the buffer while it wrote it's results into it.  If another thread happened to finish at the same time, that thread would have to wait for the first one to finish.  The bigger the image and/or the more threads available, the bigger the traffic jam could get.I had already started coding by the time I realized this.  Crap...  More wasted effort, cue another refactor...
+
+So I realized that I need to slow down, and spend some time methodically walking through RIFT and what it needs to do.  I need to think of how all these little systems fit together.  I need to be smarter on how I spend my coding time, because I don't have a lot of it between work and family.
+
+So to make a long story short: old Jon didn't plan well and wasted a lot of time coding stuff that either didn't work or got rewritten once a problem with it came to light.  Don't be like old Jon.  Be like new Jon.  He plans!
