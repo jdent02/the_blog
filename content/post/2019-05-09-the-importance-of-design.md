@@ -63,7 +63,7 @@ There's no way that kind of complexity can be hacked together as I merrily go al
 
 Of course that's easier said than done.  One of the challenges I continually encounter is that even when I plan, I miss something important.  This is largely due to my inexperience with analyzing code design to that nitpicky of a level.  
 
-consider the following: 
+Consider the following: 
 
 - I want RIFT to be a tiled renderer (where the render is split up into multiple tiles so each of your CPU cores can work on a chunk of the final image).  Originally I had planned for each worker thread to merge it's results into a C float array 'pixel_buffer' that would be maintained by the render controller.  While that plan would have worked, it would have been sub optimal.  When a tile finished it's process, it would have to lock the buffer while it wrote it's results into it.  If another thread happened to finish at the same time, that thread would have to wait for the first one to finish.  The bigger the image and/or the more threads available, the bigger the traffic jam could get.  In addition, the size of this buffer would need to take into account the format of each pixel.  Was it RGB?  RGBA? That extra letter matters...
 
