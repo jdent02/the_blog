@@ -23,3 +23,20 @@ One of the things I'd been able to skate by on up until recently was not having 
 Here's where I should say something about the comfort of routine, but that would be <acronym title="Avoid at all costs">mansplaining</acronym>, and...
 
 ![](/images/1_8xraf6eyaxh-mynxoxkqla.jpeg)
+
+So anyhoo.
+
+1. Jon's Coding Workflow:
+   1. Make it up as you go.  
+   2. Backtrack and fix older stuff that doesn't work because of changes.
+   3. Make too many updates in a row to older code to account for new features.
+   4. Let your shogun approach cause plenty of bugs.
+   5. Get confused because you can't remember how you got to where you are, you just know something isn't working.
+   6. Fix bugs?
+   7.  .....
+   8. Profit!
+   9. Fix more bugs in a random, undisciplined fashion.
+   10. Re-write the whole damn thing because you've jacked it up so bad (and didn't document any of it).
+   11. S*#$@, now nothing works.
+   12. Cry salty tears of bitter defeat.
+   13. Go to bed.
