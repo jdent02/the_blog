@@ -9,7 +9,7 @@ keywords:
 comments:       false
 showMeta:       false
 showActions:    false
-coverImage: "/images/abstract-1278077_1920."
+coverImage: "/images/abstract-1278077_1920.jpg"
 clearReading: true
 coverSize: partial
 ---
@@ -32,8 +32,7 @@ The next major project (that is still ongoing) is another major re-write, this t
 
 In the meantime, here's a little video that shows off appleseed nicely.  It's a bit old by this point, but it's still quite charming.
 
-
-<iframe title="vimeo-player" src="https://player.vimeo.com/video/92172277" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+{{< vimeo 92172277 >}}
 
 <br>
 <br>

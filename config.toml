@@ -30,25 +30,25 @@ identifier = "about"
 name = "About"
 pre = "<i class=\"sidebar-button-icon fa fa-lg fa-question\"></i>"
 url = "/#about"
-weight = 6
+weight = 7
 [[menu.main]]
 identifier = "archives"
 name = "Archives"
 pre = "<i class=\"sidebar-button-icon fa fa-lg fa-archive\"></i>"
 url = "/archives"
-weight = 5
+weight = 6
 [[menu.main]]
 identifier = "tags"
 name = "Tags"
 pre = "<i class=\"sidebar-button-icon fa fa-lg fa-tags\"></i>"
 url = "/tags"
-weight = 4
+weight = 5
 [[menu.main]]
 identifier = "categories"
 name = "Categories"
 pre = "<i class=\"sidebar-button-icon fa fa-lg fa-bookmark\"></i>"
 url = "/categories"
-weight = 3
+weight = 4
 [[menu.main]]
 identifier = "home"
 name = "Home"
@@ -56,11 +56,17 @@ pre = "<i class=\"sidebar-button-icon fa fa-lg fa-home\"></i>"
 url = "/"
 weight = 1
 [[menu.main]]
+identifier = "rift"
+name = "RIFT"
+pre = "<i class=\"sidebar-button-icon fa fa-lg fa-camera\"></i>"
+url = "page/rift"
+weight = 2
+[[menu.main]]
 identifier = "projects"
 name = "Projects"
 pre = "<i class=\"sidebar-button-icon fa fa-lg fa-microchip\"></i>"
 url = "page/blender_plugins"
-weight = 2
+weight = 3
 [[menu.misc]]
 identifier = "rss"
 name = "RSS"
