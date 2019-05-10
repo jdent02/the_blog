@@ -91,7 +91,7 @@ fields:
   type: boolean
   label: Show Actions
 pages:
-- content/post/2019-05-02-welcome-to-this-blogging-thing.md
-- content/post/2019-05-03-python-to-c-or-how-i-learned-to-stop-worrying-and-sort-of-love-the-curly-brace.md
-- content/post/2019-05-07-rift-render-project.md
 - content/post/2019-05-09-the-importance-of-design.md
+- content/post/2019-05-07-rift-render-project.md
+- content/post/2019-05-03-python-to-c-or-how-i-learned-to-stop-worrying-and-sort-of-love-the-curly-brace.md
+- content/post/2019-05-02-welcome-to-this-blogging-thing.md
