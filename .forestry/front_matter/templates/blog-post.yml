@@ -30,20 +30,20 @@ fields:
     min: 
     max: 
   label: Gallery
-- name: thumbnailimage
+- name: thumbnailImage
   type: file
   config:
     maxSize: 250
   label: Thumbnail Image
-- name: thumbnailimageposition
+- name: thumbnailImagePosition
   type: select
   default: []
   config:
     required: false
     options:
     - left
-    - " right"
-    - " bottom"
+    - right
+    - bottom
     source:
       type: simple
       section: posts
@@ -53,12 +53,12 @@ fields:
 - type: file
   name: coverImage
   label: Cover Image
-- name: covercaption
+- name: coverCaption
   type: text
   config:
     required: false
   label: Cover Caption
-- name: coversize
+- name: coverSize
   type: select
   default: []
   config:
@@ -87,8 +87,11 @@ fields:
 - type: boolean
   name: showDate
   label: Show Date
-- name: showactions
+- name: showActions
   type: boolean
   label: Show Actions
 pages:
 - content/post/2019-05-02-welcome-to-this-blogging-thing.md
+- content/post/2019-05-03-python-to-c-or-how-i-learned-to-stop-worrying-and-sort-of-love-the-curly-brace.md
+- content/post/2019-05-07-rift-render-project.md
+- content/post/2019-05-09-the-importance-of-design.md
