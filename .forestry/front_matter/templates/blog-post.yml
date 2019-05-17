@@ -92,6 +92,7 @@ fields:
   type: boolean
   label: Show Actions
 pages:
+- content/post/meme-of-the-day.md
 - content/post/2019-05-09-the-importance-of-design.md
 - content/post/2019-05-07-rift-render-project.md
 - content/post/2019-05-03-python-to-c-or-how-i-learned-to-stop-worrying-and-sort-of-love-the-curly-brace.md
