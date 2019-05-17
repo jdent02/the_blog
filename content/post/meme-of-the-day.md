@@ -16,7 +16,7 @@ showTags = false
 summary = ""
 tags = []
 thumbnailImage = "/images/grumpy-cat-meme-081.jpg"
-thumbnailImagePosition = "left"
+thumbnailImagePosition = "right"
 title = "Meme of the Day"
 
 +++
