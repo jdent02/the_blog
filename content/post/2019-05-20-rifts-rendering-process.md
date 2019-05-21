@@ -41,9 +41,8 @@ Ultimately, I decided on the latter.  The renderer would define and provide the 
 3. What does a Render Thread own?
    1. A **LightingIntegrator** object
    2. Pointers to the tile_pool, scene, and render settings
-   3. An **RNGSampler** object for generating camera rays
-   4. A **Tile** to store final render results
-   5. **SampleAccumulators** for each render layer (AOV)
+   3. An **RngSampler** object for generating camera ray offsets
+   4. A **SampleAccumulator** for each render layer (AOV)
 
 ## The Rendering Process:
 
@@ -67,7 +66,7 @@ The biggest challenge by far has been the brainstorming behind the render proces
 
  I'm taking **"1000 yard stare at some random person for a good five minutes because your brain isn't processing what your eyes are doing"** challenging.  
 
-I'm sure this is all old hat to an experienced render engine developer, and I could easily copy what appleseed or PBRT do if I wanted.  What keeps me from doing that is something that's becoming more and more important to me with regards to RIFT: I have to figure the design out myself.  Just copying other programs doesn't teach me squat.  True, RIFT will most likely run like absolute steaming crap compared to better engineered renderers, but that's okay.  As I learn I can always re-write it.
+I'm sure this is all old hat to an experienced render engine developer, and I could easily copy what appleseed or PBRT do if I wanted quick results.  What keeps me from doing that is something that's becoming more and more important to me with regards to RIFT: I have to figure the overall design out myself.  Taking inspiration from other renders is okay, but copying other programs verbatim doesn't teach me squat.  True, RIFT will most likely run like absolute steaming garbage compared to better engineered renderers, but that's okay.  As I learn I can always re-write it.
 
 <br>
 
