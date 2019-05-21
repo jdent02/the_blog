@@ -18,7 +18,7 @@ showSocial: true
 showMeta: true
 showActions: true
 ---
-
+## \*Warning: this post suffers from a reduced level of snarkiness.  You've been warned...\*
 
 One of the goal I had in starting this blog was documenting the thought process and choices behind the structure of RIFT.  Probably best to start that with the linchpin for the whole system: **the rendering process**.
 
