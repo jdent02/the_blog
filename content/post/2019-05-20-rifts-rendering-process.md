@@ -18,6 +18,8 @@ showSocial: true
 showMeta: true
 showActions: true
 ---
+
+
 One of the goal I had in starting this blog was documenting the thought process and choices behind the structure of RIFT.  Probably best to start that with the linchpin for the whole system: **the rendering process**.
 
 ## Decision: Monolithic or Modular?
@@ -37,10 +39,11 @@ Ultimately, I decided on the latter.  The renderer would define and provide the 
    3. a vector array of **RenderThreads**
    4. a **TilePool** object (this sections out the render image into 'tiles' of pixels and stores the four corners of it)
 3. What does a Render Thread own?
-   1. a **LightingIntegrator** object
-   2. an **RNGSampler** object for generating camera rays
-   3. A **Tile** to store final render results
-   4. **SampleAccumulators** for each render view
+   1. A **LightingIntegrator** object
+   2. Pointers to the tile_pool, scene, and render settings
+   3. An **RNGSampler** object for generating camera rays
+   4. A **Tile** to store final render results
+   5. **SampleAccumulators** for each render layer (AOV)
 
 ## The Rendering Process:
 
@@ -52,10 +55,28 @@ Next, pointers to the settings, scene and tile buffer are fed to a render contro
 
 Next, render threads are created for each available core and pointers to the settings, tile_buffer, tile_pool and scene.  Each thread is then launched, creating lighting and sampler objects based on the render settings and a vector array of sample accumulators.
 
-A thread starts out by querying the controller's tile pool for available work.  If a tile is available, it will take that tile outline along with a seed value from the controller RNG.  The rendering process starts.  For each ray hit the HitRecord will be passed to each sample accumulator.  At the end of rendering each accumulator is placed by name reference into a Tile object.  That Tile object is then push_back'ed to the mutex locked TileBuffer.  The thread then queries the tile_pool again.  If work is available the process repeats, if not the thread exits.
+A thread starts out by querying the controller's tile pool for available work.  If a tile is available, it will take that tile outline along with a seed value from the controller RNG.  The rendering process starts.  For each ray hit the HitRecord, ScatterRecord and Ray will be passed to each sample accumulator.  Each accumulator will process the inputs to derive whatever sample they need out of it.
+
+When the tile is finished, a new Tile object is created and each sample accumulator flushes it's sample buffer into a pixel buffer that is then added to the Tile.  After this the final Tile object is pushed to the tile_buffer.
 
 After all this, the front end is left with a vector array of tiles, each tile holding the pixels for all the views (AOVs) in the image.  If those images need to be processed or exported, the front end will deal with calling the appropriate exporter or converter class and passing the tile buffer into it.
 
 ## The challenges for me regarding this design:
 
-The biggest challenge so far has been working within the restrictions of RIFT itself being a shared library.  I'll talk about some of the gotchas I've run across so far in another post, but suffice to say the front end and the render library reside in different spaces of memory, and passing items between them is not as straightforward as it seems.
+The biggest challenge by far has been the brainstorming behind the render process itself.  There are so many things that need to happen during this process, and I'm really trying to take my earlier post about planning to heart.  That means I need to have this all sketched out before I start to code.  Figuring out how the render threads would pass info to their accumulators, and how those accumulators then transfer their data to the Tile object was really challenging. 
+
+ I'm taking **"1000 yard stare at some random person for a good five minutes because your brain isn't processing what your eyes are doing"** challenging.  
+
+I'm sure this is all old hat to an experienced render engine developer, and I could easily copy what appleseed or PBRT do if I wanted.  What keeps me from doing that is something that's becoming more and more important to me with regards to RIFT: I have to figure the design out myself.  Just copying other programs doesn't teach me squat.  True, RIFT will most likely run like absolute steaming crap compared to better engineered renderers, but that's okay.  As I learn I can always re-write it.
+
+<br>
+
+
+
+
+
+![](/images/city-journey-orange-and-blue-wall-art_pe1043.jpg)
+
+<br>
+
+Is it too late to say **"Cheesy Inspirational Quote Warning?"**
