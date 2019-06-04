@@ -1,6 +1,7 @@
 ---
 title: Feeding the Internal Über Geek
 date: 2019-06-03T13:56:25.106Z
+summary: Nerd Zone ahead...
 keywords:
   - random_post
 categories:
