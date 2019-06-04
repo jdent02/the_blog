@@ -17,7 +17,7 @@ showSocial: true
 showMeta: true
 showActions: true
 ---
-All So somewhere along the lines I had heard of something called the 'Humble Bundle'.  hadn't really paid too much attention to it and really had no idea what it was other than some kind of package of stuff that was sold for an insanely low price.  Then one of the guys on the appleseed Discord server posted a link:
+So somewhere along the lines I had heard of something called the 'Humble Bundle'.  Hadn't really paid too much attention to it and really had no idea what it was other than a package of stuff that was sold for an insanely low price.  Then one of the guys on the appleseed Discord server posted a link:
 
 THE HUMBLE BOOK BUNDLE: COMPUTER GRAPHICS
 
