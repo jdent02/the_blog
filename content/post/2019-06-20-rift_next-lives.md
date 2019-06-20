@@ -33,4 +33,4 @@ I also want to add in some new objects like an infinite plane and maybe even a c
 
 Finally, I want to get triangle meshes added in so I can render something more interesting than a Cornell Box or a field of balls (heh heh).  I've had my eye on the Embree library from Intel, so I have to research that.
 
-Finally, I'm wondering how much I may want to change the architecture of RIFT Next based on [Raytracing from the Ground Up]<http://www.raytracegroundup.com/>
+Finally, I'm wondering how much I may want to change the architecture of RIFT Next based on [Raytracing from the Ground Up](http://www.raytracegroundup.com/), one of the books from that awesome Humble Bundle.  The concepts and overall structure seem similar, but there are major differences in how it's being implemented.  The book is much more advanced and thorough than the Pete Shirley e-books that jump started RIFT.  Whether this means it's render is 'better' is not an easy question to answer, but at the very least it probably has some good tricks and techniques that I can use.
