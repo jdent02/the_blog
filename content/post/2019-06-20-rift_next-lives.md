@@ -15,11 +15,13 @@ showSocial: true
 showMeta: true
 showActions: true
 ---
-After much recording, some slight headaches, and a lot of reading about the voodoo magic of dynamic link libraries, I'm happy to say that RIFT Next is finally capable of producing an image:
+After much code typing, some slight headaches, and a lot of reading about the voodoo magic of dynamic link libraries, I'm happy to say that RIFT Next is finally capable of producing an image:
 
 ![](/images/cornell_box.jpg)
 
-Well, nothing too impressive on its own, as it's pretty much the same image the older RIFT produced right before it was sent to the old folks home in Renderville.  Everything has to start somewhere, even a frankenrenderer like RIFT Next.  I call it a frankenrenderer in that it's based on someone else's structure, but heavily modified; not unlike taking a corpse, putting bolts in its neck, and then perking it up with lightning.
+Well, nothing too impressive on its own, as it's pretty much the same image the older RIFT produced right before it was sent to the retirement community in Renderville, where it frolics with it's protein shake alongside celebrities like MentalRay and REYES Renderman.  It's offspring had to start somewhere, and getting it to the same level as dear old Dad seemed like a good starting goalpost.
+
+Of course any good goalpost needs to be moved...
 
 ## So where does RIFT Next go from here?
 
