@@ -19,7 +19,7 @@ After much code typing, some slight headaches, and a lot of reading about the vo
 
 ![](/images/cornell_box.jpg)
 
-Well, nothing too impressive on its own, as it's pretty much the same image the older RIFT produced right before it was sent to the retirement community in Renderville, where it frolics with it's protein shake alongside celebrities like MentalRay and REYES Renderman.  It's offspring had to start somewhere, and getting it to the same level as dear old Dad seemed like a good starting goalpost.
+Well, nothing too impressive on its own, as it's pretty much the same image the older RIFT produced right before it was sent to the retirement community in Renderville, where it frolics alongside celebrities like MentalRay and REYES Renderman.  It's offspring had to start somewhere, and getting it to the same level as dear old Dad seemed like a good starting goalpost.
 
 Of course any good goalpost needs to be moved...
 
