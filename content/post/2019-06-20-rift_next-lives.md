@@ -1,5 +1,5 @@
 ---
-title: RIFT_Next Lives!
+title: RIFT Next Lives!
 date: 2019-06-20T16:15:30.401Z
 keywords:
   - RIFT_Next
